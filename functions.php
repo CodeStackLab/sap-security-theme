@@ -168,7 +168,7 @@ function hba_get_customizer_css() {
     $hero_font     = !empty($hero_font_mod) ? $hero_font_mod : $head_font;
     $hero_weight   = get_theme_mod( 'hba_hero_title_weight', '800' );
     $hero_align    = get_theme_mod( 'hba_hero_text_align', 'center' );
-    $hero_padding  = get_theme_mod( 'hba_hero_padding', 4.0 );
+    $hero_padding  = get_theme_mod( 'hba_hero_padding', 2.0 );
     $hero_overlay  = get_theme_mod( 'hba_hero_overlay', 0 );
     $hero_shadow   = get_theme_mod( 'hba_hero_text_shadow', false );
     $logo_width    = get_theme_mod( 'hba_logo_width', 200 );

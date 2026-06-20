@@ -205,7 +205,7 @@ function hba_customizer( $wp_customize ) {
     $wp_customize->add_setting( 'hba_hero_text_align',  [ 'default' => 'center', 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ] );
     $wp_customize->add_control( 'hba_hero_text_align',  [ 'label' => 'Hero Text Alignment', 'section' => 'hba_homepage_hero', 'type' => 'select', 'choices' => [ 'left' => 'Left', 'center' => 'Center', 'right' => 'Right' ] ] );
 
-    $wp_customize->add_setting( 'hba_hero_padding',     [ 'default' => 4.0, 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ] );
+    $wp_customize->add_setting( 'hba_hero_padding',     [ 'default' => 2.0, 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ] );
     $wp_customize->add_control( 'hba_hero_padding',     [ 'label' => 'Hero Vertical Padding (rem)', 'section' => 'hba_homepage_hero', 'type' => 'number', 'input_attrs' => ['min' => 1, 'max' => 12, 'step' => 0.5] ] );
 
     $wp_customize->add_setting( 'hba_hero_overlay',     [ 'default' => 0, 'sanitize_callback' => 'sanitize_text_field', 'transport' => 'postMessage' ] );
