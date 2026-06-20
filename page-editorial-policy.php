@@ -140,10 +140,7 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
       <span class="eyebrow"><?php echo esc_html($hero_eyebrow); ?></span>
       <h1><?php echo esc_html($hero_title); ?></h1>
       <p class="lede">
-        Health Beyond Age exists to help people make informed decisions about their health.
-        That only works if you can trust what you read here. This page explains exactly how
-        our content gets made â€” from research to fact-checking to medical review â€” so you
-        always know what's behind the advice.
+        <?php echo wp_kses_post($hero_lede); ?>
       </p>
       <div class="meta-row">
         <span><?php echo esc_html($last_updated); ?></span>
@@ -157,7 +154,7 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
       <p>
         Every article published on Health Beyond Age is written or reviewed by someone with
         relevant clinical training, lived professional expertise, or a research background in
-        the topic at hand. We are not a content farm repackaging other websites â€” every piece
+        the topic at hand. We are not a content farm repackaging other websites — every piece
         starts from primary sources and clinical guidelines, and is shaped by people who
         understand the subject matter firsthand.
       </p>
@@ -196,7 +193,7 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
       <h2>How We Research Our Content</h2>
       <p class="section-sub">What happens before a single word gets written</p>
       <p>
-        Topics are chosen because they're genuinely useful â€” common questions our readers ask,
+        Topics are chosen because they're genuinely useful — common questions our readers ask,
         conditions that affect people as they age, or areas where misinformation tends to
         spread. From there, every article follows the same research backbone:
       </p>
@@ -214,7 +211,7 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
           <h3>Cross-check against clinical guidelines</h3>
           <p>
             We compare findings against guidance from major health authorities and medical
-            associations relevant to the topic â€” for example, cardiology guidance for heart
+            associations relevant to the topic — for example, cardiology guidance for heart
             health content, or endocrinology guidance for diabetes content.
           </p>
         </div>
@@ -242,8 +239,8 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
       <h2>Our Fact-Checking Process</h2>
       <p class="section-sub">Nothing publishes on a single person's word</p>
       <p>
-        Every factual claim â€” statistics, study findings, drug or supplement interactions,
-        symptom descriptions, treatment recommendations â€” is checked against its original
+        Every factual claim — statistics, study findings, drug or supplement interactions,
+        symptom descriptions, treatment recommendations — is checked against its original
         source before publication. Our fact-checking process includes:
       </p>
 
@@ -255,7 +252,7 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
           <tbody>
             <tr><td>Source verification</td><td>Every statistic or study citation is traced back to its original publication, not a secondhand summary.</td></tr>
             <tr><td>Currency check</td><td>We confirm cited research and guidelines are still current, not superseded by more recent findings.</td></tr>
-            <tr><td>Context check</td><td>We confirm a study's population, sample size, and limitations are represented accurately â€” not overstated for effect.</td></tr>
+            <tr><td>Context check</td><td>We confirm a study's population, sample size, and limitations are represented accurately — not overstated for effect.</td></tr>
             <tr><td>Internal consistency</td><td>Claims are checked against other published Health Beyond Age content to avoid contradicting guidance elsewhere on the site.</td></tr>
             <tr><td>Medical accuracy</td><td>A qualified reviewer independently confirms the clinical content is correct and appropriately cautious (see below).</td></tr>
           </tbody>
@@ -304,7 +301,7 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
       <p class="section-sub">The final check before anything goes live</p>
       <p>
         All health and medical content on this site is reviewed by a qualified professional
-        before publication â€” separate from the person who wrote it. This separation matters:
+        before publication — separate from the person who wrote it. This separation matters:
         it means every article gets an independent second opinion from someone with the
         clinical background to catch errors a writer might miss.
       </p>
@@ -313,16 +310,16 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
         <img src="http://healthbeyondage.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-10-at-12.55.05-PM.jpeg" alt="Dr. Sarah Matheson">
         <div>
           <div class="rname">Dr. Sarah Matheson, MBChB, MRCGP</div>
-          <div class="rrole">Lead Medical Reviewer Â· Internal Medicine, Preventive Health &amp; Healthy Aging</div>
+          <div class="rrole">Lead Medical Reviewer · Internal Medicine, Preventive Health &amp; Healthy Aging</div>
         </div>
       </div>
 
       <p style="margin-top:20px;">
         Our review team also includes physicians and specialists who review content within
-        their own area of expertise â€” for example, our dermatology content is reviewed by a
+        their own area of expertise — for example, our dermatology content is reviewed by a
         board-certified dermatologist, and our nutrition content is reviewed by a registered
         dietitian or physician with nutrition expertise. You can see our full reviewer team,
-        credentials, and specialties on our <a href="https://healthbeyondage.com/team" style="color:var(--accent);font-weight:600;">Meet the Team</a> page.
+        credentials, and specialties on our <a href="<?php echo esc_url(home_url('/team')); ?>" style="color:var(--accent);font-weight:600;">Meet the Team</a> page.
       </p>
 
       <p>A medical review checks that an article:</p>
@@ -357,14 +354,14 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
 
     <!-- WHAT THIS SITE IS / ISN'T -->
     <div class="section">
-      <h2>What This Site Is â€” and Isn't</h2>
+      <h2>What This Site Is — and Isn't</h2>
       <div class="faq-item">
         <h3>This is educational content, not personal medical advice</h3>
         <p>
           Our articles are written to inform, not to diagnose or treat any individual. They
           can't account for your specific medical history, medications, or circumstances.
           Always talk to a qualified healthcare provider about your own health decisions. See
-          our <a href="https://healthbeyondage.com/medical-disclaimer" style="color:var(--accent);font-weight:600;">Medical Disclaimer</a> for full details.
+          our <a href="<?php echo esc_url(home_url('/medical-disclaimer')); ?>" style="color:var(--accent);font-weight:600;">Medical Disclaimer</a> for full details.
         </p>
       </div>
       <div class="faq-item">
@@ -388,12 +385,12 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
     <div class="contact-box">
       <h2>Questions About Our Editorial Process?</h2>
       <p>We're glad to explain how a specific article was researched or reviewed, or to hear about a correction you think we should make.</p>
-      <a class="btn-fill" href="https://healthbeyondage.com/contact">Contact Our Editorial Team</a>
+      <a class="btn-fill" href="<?php echo esc_url(home_url('/contact')); ?>">Contact Our Editorial Team</a>
     </div>
 
   </main>
 
-    <!-- ============ SIDEBAR ============ -->
+  <!-- ============ SIDEBAR ============ -->
   <aside class="sidebar">
 
     <!-- Trending -->
@@ -456,7 +453,7 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
     <!-- Reviewer card -->
     <?php if ($reviewer_id) : 
         $r_name = get_the_title($reviewer_id);
-        $r_role = get_post_meta($reviewer_id, 'hba_team_role', true) ?: 'Medical Reviewer';
+        $r_role = get_post_meta($reviewer_id, '_hba_team_role', true) ?: 'Medical Reviewer';
         $r_bio = get_the_excerpt($reviewer_id) ?: 'Expert reviewer at Health Beyond Age.';
         $r_img = get_the_post_thumbnail_url($reviewer_id, 'thumbnail');
     ?>
@@ -467,6 +464,17 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
         <div class="role"><?php echo esc_html($r_role); ?></div>
         <p><?php echo esc_html($r_bio); ?></p>
         <a href="<?php echo get_permalink($reviewer_id); ?>">View Full Profile →</a>
+      </div>
+    </div>
+    <?php else: ?>
+    <!-- Fallback if no Reviewer selected in Customizer -->
+    <div class="widget">
+      <div class="sidebar-card reviewer-card">
+        <img src="http://healthbeyondage.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-10-at-12.55.05-PM.jpeg" alt="Dr. Sarah Matheson">
+        <h4>Dr. Sarah Matheson</h4>
+        <div class="role">Lead Medical Reviewer</div>
+        <p>Board-certified in internal medicine, with 18 years overseeing medical review at Health Beyond Age.</p>
+        <a href="<?php echo esc_url(home_url('/team')); ?>">View Full Profile →</a>
       </div>
     </div>
     <?php endif; ?>
@@ -484,8 +492,4 @@ $reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
 
 </div>
 
-
-
 <?php get_footer(); ?>
-
-
