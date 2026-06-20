@@ -100,8 +100,11 @@ get_header();
       </div>
     </div>
     
-    <div class="standards-cta fade-up">
-      <a href="<?php echo esc_url( home_url('/about') ); ?>" class="btn-green">Learn About Our Editorial Process &rarr;</a>
+    <div class="standards-cta fade-up" style="text-align:center; margin-top: 3rem;">
+      <a href="<?php echo esc_url( home_url('/editorial-policy') ); ?>" style="display:inline-flex; align-items:center; gap:10px; background:var(--accent); color:#fff; font-weight:600; font-size:16px; padding:14px 32px; border-radius:999px; text-decoration:none; box-shadow:0 4px 14px rgba(27, 85, 59, 0.25); transition:all 0.3s ease;">
+        Learn About Our Editorial Process 
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
     </div>
   </div>
 <?php get_footer(); ?>
