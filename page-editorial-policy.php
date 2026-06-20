@@ -40,15 +40,9 @@ $ep_nl_text         = get_theme_mod( 'hba_ep_nl_text',       'Expert-curated wel
 $ep_stat1           = get_theme_mod( 'hba_ep_stat1',         '5 Health Categories' );
 $ep_stat2           = get_theme_mod( 'hba_ep_stat2',         '100% Medically Reviewed' );
 $ep_stat3           = get_theme_mod( 'hba_ep_stat3',         'Since 2021 Publishing' );
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-<meta charset="<?php bloginfo('charset'); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Editorial Policy - <?php bloginfo('name'); ?></title>
-<?php wp_head(); ?>
+get_header(); ?>
 <style>
-  :root{
+  .ep-wrapper {
     --ink:#1b2430;
     --muted:#5b6675;
     --line:#e7e3d9;
@@ -60,34 +54,24 @@ $ep_stat3           = get_theme_mod( 'hba_ep_stat3',         'Since 2021 Publish
     --radius:14px;
     --maxw:1180px;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    background:#fff;
   }
-  *{box-sizing:border-box;}
-  body{margin:0;background:#fff;color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;}
-  a{color:inherit;text-decoration:none;}
-  img{max-width:100%;display:block;}
-
-  .ep-site-header{border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:50;}
-  .ep-nav-wrap{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 24px;gap:24px;}
-  .ep-logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:-0.01em;color:var(--ink);flex:none;}
-  .ep-logo-mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent-dark));display:flex;align-items:center;justify-content:center;color:#fff;font-size:17px;flex:none;}
-  .ep-primary-nav{display:flex;gap:28px;list-style:none;margin:0;padding:0;flex:1;justify-content:center;}
-  .ep-primary-nav a{font-size:15px;font-weight:500;color:var(--ink);padding:6px 2px;border-bottom:2px solid transparent;}
-  .ep-primary-nav a:hover{color:var(--accent);}
-  .ep-nav-right{display:flex;align-items:center;gap:18px;flex:none;}
-  .ep-nav-right a{font-size:14.5px;font-weight:500;}
-  .ep-btn-outline{border:1px solid var(--line);border-radius:999px;padding:8px 18px;}
-  .ep-btn-outline:hover{border-color:var(--accent);color:var(--accent);}
-  @media(max-width:900px){.ep-primary-nav{display:none;}.ep-btn-outline{padding:7px 14px;font-size:13.5px;}}
+  .ep-wrapper * { box-sizing:border-box; }
+  .ep-wrapper a { color:inherit; text-decoration:none; }
+  .ep-wrapper img { max-width:100%; display:block; }
 
   .ep-breadcrumb-strip{background:var(--bg-soft);border-bottom:1px solid var(--line);}
   .ep-breadcrumb-wrap{max-width:var(--maxw);margin:0 auto;padding:12px 24px;font-size:13.5px;color:var(--muted);}
   .ep-breadcrumb-wrap a:hover{color:var(--accent);}
 
-  .ep-page-wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px 64px;display:grid;grid-template-columns:1fr 320px;gap:48px;}
+  .ep-page-wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px 64px;display:grid;grid-template-columns:1fr 320px;gap:48px;padding-top:30px;}
   @media(max-width:980px){.ep-page-wrap{grid-template-columns:1fr;}}
   .ep-main-col{min-width:0;}
 
-  .ep-policy-hero{padding:44px 0 30px;border-bottom:1px solid var(--line);margin-bottom:38px;}
+  .ep-policy-hero{padding:14px 0 30px;border-bottom:1px solid var(--line);margin-bottom:38px;}
   .ep-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:6px 14px;border-radius:999px;margin-bottom:18px;}
   .ep-policy-hero h1{font-size:clamp(28px,4vw,38px);line-height:1.15;margin:0 0 14px;letter-spacing:-0.01em;}
   .ep-policy-hero p.ep-lede{font-size:17.5px;color:var(--muted);max-width:600px;margin:0 0 20px;}
@@ -181,40 +165,9 @@ $ep_stat3           = get_theme_mod( 'hba_ep_stat3',         'Since 2021 Publish
   .ep-newsletter-card .ep-btn-fill{background:#fff;color:var(--accent-dark)!important;width:100%;text-align:center;display:block;}
   .ep-newsletter-card .ep-btn-fill:hover{background:#f1f1f1;}
   @media(max-width:980px){.ep-sidebar{flex-direction:row;flex-wrap:wrap;}.ep-widget{flex:1 1 280px;}}
-
-  .ep-site-footer{background:var(--bg-soft);border-top:1px solid var(--line);margin-top:20px;}
-  .ep-footer-wrap{max-width:var(--maxw);margin:0 auto;padding:48px 24px 28px;}
-  .ep-footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;margin-bottom:36px;}
-  @media(max-width:800px){.ep-footer-top{grid-template-columns:1fr 1fr;}}
-  .ep-footer-brand .ep-logo{margin-bottom:14px;}
-  .ep-footer-brand p{font-size:13.5px;color:var(--muted);max-width:280px;}
-  .ep-footer-col h5{font-size:12.5px;text-transform:uppercase;letter-spacing:0.04em;color:var(--ink);margin:0 0 14px;}
-  .ep-footer-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
-  .ep-footer-col a{font-size:13.5px;color:var(--muted);}
-  .ep-footer-col a:hover{color:var(--accent);}
-  .ep-footer-stats{display:flex;flex-wrap:wrap;gap:24px;border-top:1px solid var(--line);padding-top:22px;margin-bottom:18px;font-size:13px;color:var(--muted);}
-  .ep-footer-stats strong{color:var(--ink);}
-  .ep-footer-bottom{font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px;}
 </style>
-</head>
-<body <?php body_class(); ?>>
 
-<header class="ep-site-header">
-  <div class="ep-nav-wrap">
-    <a href="<?php echo esc_url(home_url('/')); ?>" class="ep-logo">
-      <span class="ep-logo-mark">+</span><?php bloginfo('name'); ?>
-    </a>
-    <ul class="ep-primary-nav">
-      <?php foreach(['Nutrition'=>'/nutrition/','Mental Wellness'=>'/mental-wellness/','Preventive Health'=>'/preventive-health/','Fitness'=>'/fitness/','Skin Care'=>'/skin-care/'] as $l=>$p): ?>
-      <li><a href="<?php echo esc_url(home_url($p)); ?>"><?php echo esc_html($l); ?></a></li>
-      <?php endforeach; ?>
-    </ul>
-    <div class="ep-nav-right">
-      <a href="<?php echo esc_url(home_url('/about')); ?>">About Us</a>
-      <a href="<?php echo esc_url(home_url('/blog')); ?>" class="ep-btn-outline">All Articles</a>
-    </div>
-  </div>
-</header>
+<div class="ep-wrapper">
 
 <div class="ep-breadcrumb-strip">
   <div class="ep-breadcrumb-wrap">
@@ -432,53 +385,8 @@ $ep_stat3           = get_theme_mod( 'hba_ep_stat3',         'Since 2021 Publish
 
   </aside>
 
-</div>
+</div> <!-- End ep-page-wrap -->
 
-<footer class="ep-site-footer">
-  <div class="ep-footer-wrap">
-    <div class="ep-footer-top">
-      <div class="ep-footer-brand">
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="ep-logo"><span class="ep-logo-mark">+</span><?php bloginfo('name'); ?></a>
-        <p>Evidence-based health information to help you make informed choices and live a longer, healthier life.</p>
-      </div>
-      <div class="ep-footer-col">
-        <h5>Categories</h5>
-        <ul>
-          <?php foreach(['Fitness'=>'/fitness/','Heart Health'=>'/heart-health/','Mental Wellness'=>'/mental-wellness/','Nutrition'=>'/nutrition/','Preventive Health'=>'/preventive-health/','Skin Care'=>'/skin-care/'] as $l=>$p): ?>
-          <li><a href="<?php echo esc_url(home_url($p)); ?>"><?php echo esc_html($l); ?></a></li>
-          <?php endforeach; ?>
-        </ul>
-      </div>
-      <div class="ep-footer-col">
-        <h5>Company</h5>
-        <ul>
-          <li><a href="<?php echo esc_url(home_url('/about')); ?>">About Us</a></li>
-          <li><a href="<?php echo esc_url(home_url('/team')); ?>">Meet Our Team</a></li>
-          <li><a href="<?php echo esc_url(home_url('/contact')); ?>">Contact Us</a></li>
-          <li><a href="<?php echo esc_url(home_url('/blog')); ?>">All Articles</a></li>
-          <li><a href="<?php echo esc_url(home_url('/trending')); ?>">Trending</a></li>
-        </ul>
-      </div>
-      <div class="ep-footer-col">
-        <h5>Legal</h5>
-        <ul>
-          <li><a href="<?php echo esc_url(home_url('/privacy-policy')); ?>">Privacy Policy</a></li>
-          <li><a href="<?php echo esc_url(home_url('/terms-of-use')); ?>">Terms of Use</a></li>
-          <li><a href="<?php echo esc_url(home_url('/medical-disclaimer')); ?>">Medical Disclaimer</a></li>
-          <li><a href="<?php echo esc_url(home_url('/cookie-policy')); ?>">Cookie Policy</a></li>
-          <li><a href="<?php echo esc_url(home_url('/editorial-policy')); ?>" style="font-weight:600;color:var(--accent);">Editorial Policy</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="ep-footer-stats">
-      <span><strong><?php echo esc_html($ep_stat1); ?></strong></span>
-      <span><strong><?php echo esc_html($ep_stat2); ?></strong></span>
-      <span><strong><?php echo esc_html($ep_stat3); ?></strong></span>
-    </div>
-    <div class="ep-footer-bottom">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</div>
-  </div>
-</footer>
+</div> <!-- End ep-wrapper -->
 
-<?php wp_footer(); ?>
-</body>
-</html>
+<?php get_footer(); ?>
