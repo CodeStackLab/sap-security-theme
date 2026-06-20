@@ -1,0 +1,1216 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "404.php",
+      "file_type": "code",
+      "source_file": "404.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "404",
+      "community": 6,
+      "norm_label": "404.php"
+    },
+    {
+      "label": "archive.php",
+      "file_type": "code",
+      "source_file": "archive.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "archive",
+      "community": 7,
+      "norm_label": "archive.php"
+    },
+    {
+      "label": "customizer-output.php",
+      "file_type": "code",
+      "source_file": "assets/css/customizer-output.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "css_customizer_output",
+      "community": 9,
+      "norm_label": "customizer-output.php"
+    },
+    {
+      "label": "customizer-preview.js",
+      "file_type": "code",
+      "source_file": "assets/js/customizer-preview.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_customizer_preview",
+      "community": 15,
+      "norm_label": "customizer-preview.js"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "assets/js/main.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_main",
+      "community": 1,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "initCarousel()",
+      "file_type": "code",
+      "source_file": "assets/js/main.js",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "js_main_initcarousel",
+      "community": 1,
+      "norm_label": "initcarousel()"
+    },
+    {
+      "label": "initFilterTags()",
+      "file_type": "code",
+      "source_file": "assets/js/main.js",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "js_main_initfiltertags",
+      "community": 1,
+      "norm_label": "initfiltertags()"
+    },
+    {
+      "label": "initPeriodTabs()",
+      "file_type": "code",
+      "source_file": "assets/js/main.js",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "js_main_initperiodtabs",
+      "community": 1,
+      "norm_label": "initperiodtabs()"
+    },
+    {
+      "label": "initShareButtons()",
+      "file_type": "code",
+      "source_file": "assets/js/main.js",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "js_main_initsharebuttons",
+      "community": 1,
+      "norm_label": "initsharebuttons()"
+    },
+    {
+      "label": "initTOCLinks()",
+      "file_type": "code",
+      "source_file": "assets/js/main.js",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "js_main_inittoclinks",
+      "community": 1,
+      "norm_label": "inittoclinks()"
+    },
+    {
+      "label": "initFadeUp()",
+      "file_type": "code",
+      "source_file": "assets/js/main.js",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "js_main_initfadeup",
+      "community": 1,
+      "norm_label": "initfadeup()"
+    },
+    {
+      "label": "initLiveSearch()",
+      "file_type": "code",
+      "source_file": "assets/js/main.js",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "js_main_initlivesearch",
+      "community": 1,
+      "norm_label": "initlivesearch()"
+    },
+    {
+      "label": "author.php",
+      "file_type": "code",
+      "source_file": "author.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "author",
+      "community": 22,
+      "norm_label": "author.php"
+    },
+    {
+      "label": "category.php",
+      "file_type": "code",
+      "source_file": "category.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "category",
+      "community": 8,
+      "norm_label": "category.php"
+    },
+    {
+      "label": "footer.php",
+      "file_type": "code",
+      "source_file": "footer.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "footer",
+      "community": 10,
+      "norm_label": "footer.php"
+    },
+    {
+      "label": "front-page.php",
+      "file_type": "code",
+      "source_file": "front-page.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "front_page",
+      "community": 11,
+      "norm_label": "front-page.php"
+    },
+    {
+      "label": "functions.php",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "functions",
+      "community": 0,
+      "norm_label": "functions.php"
+    },
+    {
+      "label": "hba_setup()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "functions_hba_setup",
+      "community": 0,
+      "norm_label": "hba_setup()"
+    },
+    {
+      "label": "hba_enqueue_assets()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "functions_hba_enqueue_assets",
+      "community": 5,
+      "norm_label": "hba_enqueue_assets()"
+    },
+    {
+      "label": "hba_live_search_handler()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "functions_hba_live_search_handler",
+      "community": 0,
+      "norm_label": "hba_live_search_handler()"
+    },
+    {
+      "label": "hba_get_customizer_css()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "functions_hba_get_customizer_css",
+      "community": 5,
+      "norm_label": "hba_get_customizer_css()"
+    },
+    {
+      "label": "hba_widgets_init()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "functions_hba_widgets_init",
+      "community": 0,
+      "norm_label": "hba_widgets_init()"
+    },
+    {
+      "label": "hba_reading_time()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L170",
+      "_origin": "ast",
+      "id": "functions_hba_reading_time",
+      "community": 2,
+      "norm_label": "hba_reading_time()"
+    },
+    {
+      "label": "hba_author_initials()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L180",
+      "_origin": "ast",
+      "id": "functions_hba_author_initials",
+      "community": 2,
+      "norm_label": "hba_author_initials()"
+    },
+    {
+      "label": "hba_category_badge_class()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L195",
+      "_origin": "ast",
+      "id": "functions_hba_category_badge_class",
+      "community": 2,
+      "norm_label": "hba_category_badge_class()"
+    },
+    {
+      "label": "hba_announcement_bar()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L210",
+      "_origin": "ast",
+      "id": "functions_hba_announcement_bar",
+      "community": 0,
+      "norm_label": "hba_announcement_bar()"
+    },
+    {
+      "label": "hba_newsletter_section()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L218",
+      "_origin": "ast",
+      "id": "functions_hba_newsletter_section",
+      "community": 0,
+      "norm_label": "hba_newsletter_section()"
+    },
+    {
+      "label": "hba_article_card()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L244",
+      "_origin": "ast",
+      "id": "functions_hba_article_card",
+      "community": 2,
+      "norm_label": "hba_article_card()"
+    },
+    {
+      "label": "hba_article_list_item()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L286",
+      "_origin": "ast",
+      "id": "functions_hba_article_list_item",
+      "community": 2,
+      "norm_label": "hba_article_list_item()"
+    },
+    {
+      "label": "hba_breadcrumb()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L313",
+      "_origin": "ast",
+      "id": "functions_hba_breadcrumb",
+      "community": 0,
+      "norm_label": "hba_breadcrumb()"
+    },
+    {
+      "label": "hba_count_post_views()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L354",
+      "_origin": "ast",
+      "id": "functions_hba_count_post_views",
+      "community": 0,
+      "norm_label": "hba_count_post_views()"
+    },
+    {
+      "label": "hba_get_post_views()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L361",
+      "_origin": "ast",
+      "id": "functions_hba_get_post_views",
+      "community": 0,
+      "norm_label": "hba_get_post_views()"
+    },
+    {
+      "label": "hba_pagination()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L369",
+      "_origin": "ast",
+      "id": "functions_hba_pagination",
+      "community": 0,
+      "norm_label": "hba_pagination()"
+    },
+    {
+      "label": "hba_seo_meta()",
+      "file_type": "code",
+      "source_file": "functions.php",
+      "source_location": "L392",
+      "_origin": "ast",
+      "id": "functions_hba_seo_meta",
+      "community": 0,
+      "norm_label": "hba_seo_meta()"
+    },
+    {
+      "label": "header.php",
+      "file_type": "code",
+      "source_file": "header.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "header",
+      "community": 12,
+      "norm_label": "header.php"
+    },
+    {
+      "label": "home.php",
+      "file_type": "code",
+      "source_file": "home.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "home",
+      "community": 13,
+      "norm_label": "home.php"
+    },
+    {
+      "label": "admin-panel.php",
+      "file_type": "code",
+      "source_file": "inc/admin-panel.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "inc_admin_panel",
+      "community": 3,
+      "norm_label": "admin-panel.php"
+    },
+    {
+      "label": "hba_admin_menu()",
+      "file_type": "code",
+      "source_file": "inc/admin-panel.php",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "inc_admin_panel_hba_admin_menu",
+      "community": 3,
+      "norm_label": "hba_admin_menu()"
+    },
+    {
+      "label": "hba_save_settings()",
+      "file_type": "code",
+      "source_file": "inc/admin-panel.php",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "inc_admin_panel_hba_save_settings",
+      "community": 3,
+      "norm_label": "hba_save_settings()"
+    },
+    {
+      "label": "hba_admin_page()",
+      "file_type": "code",
+      "source_file": "inc/admin-panel.php",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "inc_admin_panel_hba_admin_page",
+      "community": 3,
+      "norm_label": "hba_admin_page()"
+    },
+    {
+      "label": "hba_homepage_admin_page()",
+      "file_type": "code",
+      "source_file": "inc/admin-panel.php",
+      "source_location": "L155",
+      "_origin": "ast",
+      "id": "inc_admin_panel_hba_homepage_admin_page",
+      "community": 3,
+      "norm_label": "hba_homepage_admin_page()"
+    },
+    {
+      "label": "customizer.php",
+      "file_type": "code",
+      "source_file": "inc/customizer.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "inc_customizer",
+      "community": 4,
+      "norm_label": "customizer.php"
+    },
+    {
+      "label": "hba_customizer()",
+      "file_type": "code",
+      "source_file": "inc/customizer.php",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "inc_customizer_hba_customizer",
+      "community": 4,
+      "norm_label": "hba_customizer()"
+    },
+    {
+      "label": "hba_customizer_preview_js()",
+      "file_type": "code",
+      "source_file": "inc/customizer.php",
+      "source_location": "L274",
+      "_origin": "ast",
+      "id": "inc_customizer_hba_customizer_preview_js",
+      "community": 4,
+      "norm_label": "hba_customizer_preview_js()"
+    },
+    {
+      "label": "medical-reviewers.php",
+      "file_type": "code",
+      "source_file": "inc/medical-reviewers.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "inc_medical_reviewers",
+      "community": 21,
+      "norm_label": "medical-reviewers.php"
+    },
+    {
+      "label": "hba_register_reviewer_cpt()",
+      "file_type": "code",
+      "source_file": "inc/medical-reviewers.php",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "inc_medical_reviewers_hba_register_reviewer_cpt",
+      "community": 21,
+      "norm_label": "hba_register_reviewer_cpt()"
+    },
+    {
+      "label": "hba_add_reviewer_meta_boxes()",
+      "file_type": "code",
+      "source_file": "inc/medical-reviewers.php",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "inc_medical_reviewers_hba_add_reviewer_meta_boxes",
+      "community": 21,
+      "norm_label": "hba_add_reviewer_meta_boxes()"
+    },
+    {
+      "label": "hba_reviewer_meta_box_html()",
+      "file_type": "code",
+      "source_file": "inc/medical-reviewers.php",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "inc_medical_reviewers_hba_reviewer_meta_box_html",
+      "community": 21,
+      "norm_label": "hba_reviewer_meta_box_html()"
+    },
+    {
+      "label": "hba_reviewer_details_meta_box_html()",
+      "file_type": "code",
+      "source_file": "inc/medical-reviewers.php",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "inc_medical_reviewers_hba_reviewer_details_meta_box_html",
+      "community": 21,
+      "norm_label": "hba_reviewer_details_meta_box_html()"
+    },
+    {
+      "label": "hba_save_reviewer_meta_box_data()",
+      "file_type": "code",
+      "source_file": "inc/medical-reviewers.php",
+      "source_location": "L152",
+      "_origin": "ast",
+      "id": "inc_medical_reviewers_hba_save_reviewer_meta_box_data",
+      "community": 21,
+      "norm_label": "hba_save_reviewer_meta_box_data()"
+    },
+    {
+      "label": "index.php",
+      "file_type": "code",
+      "source_file": "index.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "index",
+      "community": 14,
+      "norm_label": "index.php"
+    },
+    {
+      "label": "page-about.php",
+      "file_type": "code",
+      "source_file": "page-about.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "page_about",
+      "community": 23,
+      "norm_label": "page-about.php"
+    },
+    {
+      "label": "page-contact.php",
+      "file_type": "code",
+      "source_file": "page-contact.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "page_contact",
+      "community": 24,
+      "norm_label": "page-contact.php"
+    },
+    {
+      "label": "page-legal.php",
+      "file_type": "code",
+      "source_file": "page-legal.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "page_legal",
+      "community": 25,
+      "norm_label": "page-legal.php"
+    },
+    {
+      "label": "page-team.php",
+      "file_type": "code",
+      "source_file": "page-team.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "page_team",
+      "community": 26,
+      "norm_label": "page-team.php"
+    },
+    {
+      "label": "page-topics.php",
+      "file_type": "code",
+      "source_file": "page-topics.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "page_topics",
+      "community": 27,
+      "norm_label": "page-topics.php"
+    },
+    {
+      "label": "page-trending.php",
+      "file_type": "code",
+      "source_file": "page-trending.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "page_trending",
+      "community": 17,
+      "norm_label": "page-trending.php"
+    },
+    {
+      "label": "page.php",
+      "file_type": "code",
+      "source_file": "page.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "page",
+      "community": 16,
+      "norm_label": "page.php"
+    },
+    {
+      "label": "search.php",
+      "file_type": "code",
+      "source_file": "search.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "search",
+      "community": 18,
+      "norm_label": "search.php"
+    },
+    {
+      "label": "single-hba_reviewer.php",
+      "file_type": "code",
+      "source_file": "single-hba_reviewer.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "single_hba_reviewer",
+      "community": 28,
+      "norm_label": "single-hba_reviewer.php"
+    },
+    {
+      "label": "single.php",
+      "file_type": "code",
+      "source_file": "single.php",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "single",
+      "community": 19,
+      "norm_label": "single.php"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 20,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "AdSense Approved Health Blog Theme",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_adsense_approved_health_blog_theme",
+      "community": 20,
+      "norm_label": "adsense approved health blog theme"
+    },
+    {
+      "label": "Features",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "readme_features",
+      "community": 20,
+      "norm_label": "features"
+    },
+    {
+      "label": "Installation Guide",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "readme_installation_guide",
+      "community": 20,
+      "norm_label": "installation guide"
+    },
+    {
+      "label": "Setting up the Theme",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "readme_setting_up_the_theme",
+      "community": 20,
+      "norm_label": "setting up the theme"
+    },
+    {
+      "label": "1. Front Page Setup",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "readme_1_front_page_setup",
+      "community": 20,
+      "norm_label": "1. front page setup"
+    },
+    {
+      "label": "2. About Page Setup",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "readme_2_about_page_setup",
+      "community": 20,
+      "norm_label": "2. about page setup"
+    },
+    {
+      "label": "3. Customizing the Theme (Appearance > Customize)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "readme_3_customizing_the_theme_appearance_customize",
+      "community": 20,
+      "norm_label": "3. customizing the theme (appearance > customize)"
+    },
+    {
+      "label": "Development",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "readme_development",
+      "community": 20,
+      "norm_label": "development"
+    },
+    {
+      "label": "License",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "readme_license",
+      "community": 20,
+      "norm_label": "license"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/main.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_initcarousel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/main.js",
+      "source_location": "L121",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_initfadeup"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/main.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_initfiltertags"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/main.js",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_initlivesearch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/main.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_initperiodtabs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/main.js",
+      "source_location": "L76",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_initsharebuttons"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/main.js",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_inittoclinks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_announcement_bar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L201",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_article_card"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L243",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_article_list_item"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L137",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_author_initials"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L270",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_breadcrumb"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L152",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_category_badge_class"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L311",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_count_post_views"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_enqueue_assets"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_get_customizer_css"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L318",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_get_post_views"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "functions",
+      "target": "functions_hba_live_search_handler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L175",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_newsletter_section"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L326",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_pagination"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L127",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_reading_time"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L349",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_seo_meta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_setup"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions",
+      "target": "functions_hba_widgets_init"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions_hba_enqueue_assets",
+      "target": "functions_hba_get_customizer_css"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L214",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions_hba_article_card",
+      "target": "functions_hba_reading_time"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L247",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions_hba_article_list_item",
+      "target": "functions_hba_reading_time"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L212",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions_hba_article_card",
+      "target": "functions_hba_author_initials"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "functions.php",
+      "source_location": "L210",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "functions_hba_article_card",
+      "target": "functions_hba_category_badge_class"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inc/admin-panel.php",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "inc_admin_panel",
+      "target": "inc_admin_panel_hba_admin_menu"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inc/admin-panel.php",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "inc_admin_panel",
+      "target": "inc_admin_panel_hba_admin_page"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inc/admin-panel.php",
+      "source_location": "L155",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "inc_admin_panel",
+      "target": "inc_admin_panel_hba_homepage_admin_page"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inc/admin-panel.php",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "inc_admin_panel",
+      "target": "inc_admin_panel_hba_save_settings"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inc/customizer.php",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "inc_customizer",
+      "target": "inc_customizer_hba_customizer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inc/customizer.php",
+      "source_location": "L240",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "inc_customizer",
+      "target": "inc_customizer_hba_customizer_preview_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inc/medical-reviewers.php",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "inc_medical_reviewers",
+      "target": "inc_medical_reviewers_hba_add_reviewer_meta_boxes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inc/medical-reviewers.php",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "inc_medical_reviewers",
+      "target": "inc_medical_reviewers_hba_register_reviewer_cpt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inc/medical-reviewers.php",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "inc_medical_reviewers",
+      "target": "inc_medical_reviewers_hba_reviewer_details_meta_box_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inc/medical-reviewers.php",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "inc_medical_reviewers",
+      "target": "inc_medical_reviewers_hba_reviewer_meta_box_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inc/medical-reviewers.php",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "inc_medical_reviewers",
+      "target": "inc_medical_reviewers_hba_save_reviewer_meta_box_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_adsense_approved_health_blog_theme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "readme_adsense_approved_health_blog_theme",
+      "target": "readme_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "readme_adsense_approved_health_blog_theme",
+      "target": "readme_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "readme_adsense_approved_health_blog_theme",
+      "target": "readme_installation_guide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "readme_adsense_approved_health_blog_theme",
+      "target": "readme_license",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "readme_adsense_approved_health_blog_theme",
+      "target": "readme_setting_up_the_theme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "readme_setting_up_the_theme",
+      "target": "readme_1_front_page_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "readme_setting_up_the_theme",
+      "target": "readme_2_about_page_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "readme_setting_up_the_theme",
+      "target": "readme_3_customizing_the_theme_appearance_customize",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "f95d1e1faed125058f1ecb5cc9902ae30b3b2f94"
+}
