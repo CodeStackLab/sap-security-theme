@@ -28,8 +28,8 @@ $h_ss = get_theme_mod('hba_hero_sub_size', 1.15);
 ?>
 
 <style>
-.home-hero { background: <?php echo esc_html($h_bg); ?> !important; }
-.home-hero h1 { color: <?php echo esc_html($h_tc); ?> !important; font-size: <?php echo esc_html($h_ts); ?>rem !important; }
+.home-hero { background: <?php echo esc_html($h_bg); ?> !important; position: relative; overflow: hidden; }
+.home-hero h1 { font-family: var(--sans) !important; font-weight: 800 !important; color: <?php echo esc_html($h_tc); ?> !important; font-size: <?php echo esc_html($h_ts); ?>rem !important; }
 .home-hero p.home-hero-subtitle { color: <?php echo esc_html($h_sc); ?> !important; font-size: <?php echo esc_html($h_ss); ?>rem !important; }
 .section.bg-pale { background: <?php echo esc_html($f_bg); ?> !important; }
 .nl-section { background: linear-gradient(155deg, <?php echo esc_html($n_bg); ?> 0%, #074030 100%) !important; }
@@ -41,7 +41,12 @@ $h_ss = get_theme_mod('hba_hero_sub_size', 1.15);
 
 <!-- ===== HOMEPAGE HERO ===== -->
 <section class="home-hero">
-    <div class="home-hero-wrap">
+    <div class="home-hero-bg-img fade-up" style="position: absolute; top: 0; right: 0; bottom: 0; width: 60%; z-index: 1; pointer-events: none;">
+        <?php if ( $hero_image ) : ?>
+            <img src="<?php echo esc_url( $hero_image ); ?>" alt="" style="width:100%; height:100%; object-fit:cover; object-position:center top; mask-image: linear-gradient(to right, transparent 0%, black 35%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%);" />
+        <?php endif; ?>
+    </div>
+    <div class="home-hero-wrap" style="position: relative; z-index: 2;">
         <div class="home-hero-left">
             <div class="home-eyebrow"><?php echo esc_html( $hero_eyebrow ); ?></div>
             <h1><?php echo esc_html( $hero_title ); ?></h1>
@@ -71,20 +76,15 @@ $h_ss = get_theme_mod('hba_hero_sub_size', 1.15);
                 </div>
             </div>
         </div>
-        <div class="home-hero-right fade-up" style="display:flex;align-items:center;justify-content:center;position:relative">
-            <div style="position:relative;width:100%;max-width:580px;margin:0 auto;">
-                <?php if ( $hero_image ) : ?>
-                    <img class="hero-photo" src="<?php echo esc_url( $hero_image ); ?>" alt="<?php esc_attr_e( 'Health Beyond Age', 'healthbeyondage' ); ?>" style="width:100%;height:420px;object-fit:cover;object-position:center top;border-radius:16px;display:block;box-shadow:0 12px 40px rgba(13,107,82,0.15)" />
-                <?php endif; ?>
-                <div class="home-medrev-card">
-                    <div class="mrc-avatar">
-                        <img src="<?php echo esc_url( get_theme_mod( 'hba_expert_photo', 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&q=80' ) ); ?>" alt="Medical Reviewer"/>
-                    </div>
-                    <div class="mrc-text">
-                        <h4><?php esc_html_e( 'Medically Reviewed', 'healthbeyondage' ); ?></h4>
-                        <p><?php esc_html_e( 'All Health Content Is Reviewed By Qualified Medical Professionals.', 'healthbeyondage' ); ?></p>
-                        <a href="<?php echo esc_url( home_url('/team') ); ?>"><?php esc_html_e( 'Learn Our Process →', 'healthbeyondage' ); ?></a>
-                    </div>
+        <div class="home-hero-right fade-up" style="display:flex;align-items:flex-end;justify-content:flex-start;position:relative;padding-bottom:1.5rem;min-height:420px;">
+            <div class="home-medrev-card" style="position:relative; bottom:auto; left:1.5rem;">
+                <div class="mrc-avatar">
+                    <img src="<?php echo esc_url( get_theme_mod( 'hba_expert_photo', 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&q=80' ) ); ?>" alt="Medical Reviewer"/>
+                </div>
+                <div class="mrc-text">
+                    <h4><?php esc_html_e( 'Medically Reviewed', 'healthbeyondage' ); ?></h4>
+                    <p><?php esc_html_e( 'All Health Content Is Reviewed By Qualified Medical Professionals.', 'healthbeyondage' ); ?></p>
+                    <a href="<?php echo esc_url( home_url('/team') ); ?>"><?php esc_html_e( 'Learn Our Process →', 'healthbeyondage' ); ?></a>
                 </div>
             </div>
         </div>
