@@ -67,13 +67,13 @@
                 <h5><?php echo esc_html( get_theme_mod('hba_footer_col1_title', 'Categories') ); ?></h5>
                 <ul>
                     <?php
-                    // Exclude slugs and names that should not be listed as categories
-                    $excluded_slugs = ['digestive-health', 'digestive_health', 'digestive'];
-                    $excluded_names = ['Digestive Health', 'digestive health'];
-                    
-                    $cats = get_categories(['number' => 10, 'hide_empty' => true]); // fetch more to ensure we have enough after filtering
-                    $cats = array_filter( $cats, function( $cat ) use ( $excluded_slugs, $excluded_names ) {
-                        return ! in_array( strtolower($cat->slug), $excluded_slugs, true ) && ! in_array( strtolower($cat->name), $excluded_names, true );
+                    $cats = get_categories(['number' => 15, 'hide_empty' => true]);
+                    $cats = array_filter( $cats, function( $cat ) {
+                        // Aggressively exclude anything containing 'digestive'
+                        if ( stripos( $cat->name, 'digestive' ) !== false || stripos( $cat->slug, 'digestive' ) !== false ) {
+                            return false;
+                        }
+                        return true;
                     });
                     $cats = array_slice( $cats, 0, 6 );
                     
