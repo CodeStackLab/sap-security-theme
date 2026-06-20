@@ -67,13 +67,16 @@
                 <h5><?php echo esc_html( get_theme_mod('hba_footer_col1_title', 'Categories') ); ?></h5>
                 <ul>
                     <?php
-                    // Exclude slugs that are tags, not categories (e.g. 'digestive-health')
-                    $excluded_slugs = ['digestive-health'];
-                    $cats = get_categories(['number' => 7, 'hide_empty' => true]);
-                    $cats = array_filter( $cats, function( $cat ) use ( $excluded_slugs ) {
-                        return ! in_array( $cat->slug, $excluded_slugs, true );
+                    // Exclude slugs and names that should not be listed as categories
+                    $excluded_slugs = ['digestive-health', 'digestive_health', 'digestive'];
+                    $excluded_names = ['Digestive Health', 'digestive health'];
+                    
+                    $cats = get_categories(['number' => 10, 'hide_empty' => true]); // fetch more to ensure we have enough after filtering
+                    $cats = array_filter( $cats, function( $cat ) use ( $excluded_slugs, $excluded_names ) {
+                        return ! in_array( strtolower($cat->slug), $excluded_slugs, true ) && ! in_array( strtolower($cat->name), $excluded_names, true );
                     });
                     $cats = array_slice( $cats, 0, 6 );
+                    
                     foreach ( $cats as $cat ) :
                     ?>
                         <li><a href="<?php echo esc_url( get_category_link( $cat->term_id ) ); ?>"><?php echo esc_html( $cat->name ); ?></a></li>
