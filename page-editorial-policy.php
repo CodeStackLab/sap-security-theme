@@ -1,9 +1,17 @@
-﻿<?php
+<?php
 /**
  * Template Name: Editorial Policy
  */
-get_header(); ?>
+get_header(); 
 
+$hero_eyebrow = get_theme_mod('hba_ep_hero_eyebrow', '⚕ Editorial Standards');
+$hero_title   = get_theme_mod('hba_ep_hero_title', 'Our Editorial Policy');
+$hero_lede    = get_theme_mod('hba_ep_hero_lede', 'Health Beyond Age exists to help people make informed decisions about their health. That only works if you can trust what you read here. This page explains exactly how our content gets made — from research to fact-checking to medical review — so you always know what\'s behind the advice.');
+$last_updated = get_theme_mod('hba_ep_last_updated', '📅 Last updated: June 2026');
+$review_freq  = get_theme_mod('hba_ep_review_freq', '🔄 Reviewed annually, or sooner if guidelines change');
+$reviewer_id  = get_theme_mod('hba_ep_reviewer_id', '');
+
+?>
 <style>
 /* Editorial Policy specific styles */
 
