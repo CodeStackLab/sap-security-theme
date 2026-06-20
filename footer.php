@@ -69,8 +69,11 @@
                     <?php
                     $cats = get_categories(['number' => 15, 'hide_empty' => true]);
                     $cats = array_filter( $cats, function( $cat ) {
-                        // Aggressively exclude anything containing 'digestive'
+                        // Aggressively exclude anything containing 'digestive' or 'heart'
                         if ( stripos( $cat->name, 'digestive' ) !== false || stripos( $cat->slug, 'digestive' ) !== false ) {
+                            return false;
+                        }
+                        if ( stripos( $cat->name, 'heart' ) !== false || stripos( $cat->slug, 'heart' ) !== false ) {
                             return false;
                         }
                         return true;

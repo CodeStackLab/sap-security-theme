@@ -235,7 +235,6 @@ $h_ss = get_theme_mod('hba_hero_sub_size', 1.15);
                 <?php
                 $ordered_topics = [
                     ['slug' => 'anxiety-depression', 'name' => 'Anxiety & Depression', 'bg' => '#18868A'],
-                    ['slug' => 'heart-health', 'name' => 'Heart Health', 'bg' => '#128C8C'],
                     ['slug' => 'menopause', 'name' => 'Menopause', 'bg' => '#C4DFE6'],
                     ['slug' => 'type-2-diabetes', 'name' => 'Type 2 Diabetes', 'bg' => '#E8F5E9'],
                     ['slug' => 'weight-management', 'name' => 'Weight Management', 'bg' => '#18868A'],

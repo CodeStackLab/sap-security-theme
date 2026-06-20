@@ -22,6 +22,10 @@ function hba_setup() {
     add_theme_support( 'customize-selective-refresh-widgets' );
     add_theme_support( 'wp-block-styles' );
     add_theme_support( 'align-wide' );
+    add_theme_support( 'appearance-tools' );
+    add_theme_support( 'custom-spacing' );
+    add_theme_support( 'custom-typography' );
+    add_theme_support( 'custom-line-height' );
 
     // Custom image sizes
     add_image_size( 'hba-thumbnail',  400, 280, true );
