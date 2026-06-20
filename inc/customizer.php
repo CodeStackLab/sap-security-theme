@@ -769,6 +769,116 @@ function hba_customizer( $wp_customize ) {
             ] );
         }
     }
+
+    /* ============================
+       SECTION: Editorial Policy Page
+    ============================ */
+    $wp_customize->add_section( 'hba_editorial_policy', [
+        'title'    => __( '📋 Editorial Policy Page', 'healthbeyondage' ),
+        'panel'    => 'hba_panel',
+        'priority' => 95,
+    ] );
+
+    // --- HERO ---
+    $wp_customize->add_setting( 'hba_ep_eyebrow', [ 'default' => '⚕ Editorial Standards', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_eyebrow', [ 'label' => 'Hero Eyebrow Badge Text', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    $wp_customize->add_setting( 'hba_ep_hero_title', [ 'default' => 'Our Editorial Policy', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_hero_title', [ 'label' => 'Hero Title (H1)', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    $wp_customize->add_setting( 'hba_ep_hero_lede', [ 'default' => 'Health Beyond Age exists to help people make informed decisions about their health. That only works if you can trust what you read here. This page explains exactly how our content gets made — from research to fact-checking to medical review — so you always know what\'s behind the advice.', 'sanitize_callback' => 'sanitize_textarea_field' ] );
+    $wp_customize->add_control( 'hba_ep_hero_lede', [ 'label' => 'Hero Lede Paragraph', 'section' => 'hba_editorial_policy', 'type' => 'textarea' ] );
+
+    $wp_customize->add_setting( 'hba_ep_last_updated', [ 'default' => '📅 Last updated: June 2026', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_last_updated', [ 'label' => 'Last Updated Text', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    $wp_customize->add_setting( 'hba_ep_review_freq', [ 'default' => '🔄 Reviewed annually, or sooner if guidelines change', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_review_freq', [ 'label' => 'Review Frequency Text', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    // --- COMMITMENT SECTION ---
+    $wp_customize->add_setting( 'hba_ep_commitment_p1', [ 'default' => 'Every article published on Health Beyond Age is written or reviewed by someone with relevant clinical training, lived professional expertise, or a research background in the topic at hand. We are not a content farm repackaging other websites — every piece starts from primary sources and clinical guidelines, and is shaped by people who understand the subject matter firsthand.', 'sanitize_callback' => 'sanitize_textarea_field' ] );
+    $wp_customize->add_control( 'hba_ep_commitment_p1', [ 'label' => 'Commitment — Paragraph 1', 'section' => 'hba_editorial_policy', 'type' => 'textarea' ] );
+
+    $wp_customize->add_setting( 'hba_ep_commitment_p2', [ 'default' => 'We accept that health information evolves. Where the science shifts, we update our articles to reflect it. Where something is uncertain or debated, we say so rather than presenting a single confident answer that doesn\'t exist yet.', 'sanitize_callback' => 'sanitize_textarea_field' ] );
+    $wp_customize->add_control( 'hba_ep_commitment_p2', [ 'label' => 'Commitment — Paragraph 2', 'section' => 'hba_editorial_policy', 'type' => 'textarea' ] );
+
+    // --- CARDS ---
+    $ep_cards = [
+        ['hba_ep_card1_num','Card 1 Number','01'],
+        ['hba_ep_card1_title','Card 1 Title','Expert-led'],
+        ['hba_ep_card1_text','Card 1 Text','Every article is written or reviewed by a credentialed health professional.'],
+        ['hba_ep_card2_num','Card 2 Number','02'],
+        ['hba_ep_card2_title','Card 2 Title','Source-first'],
+        ['hba_ep_card2_text','Card 2 Text','Claims are built on peer-reviewed research and recognized clinical guidelines.'],
+        ['hba_ep_card3_num','Card 3 Number','03'],
+        ['hba_ep_card3_title','Card 3 Title','Independently reviewed'],
+        ['hba_ep_card3_text','Card 3 Text','No article publishes without a medical reviewer checking it for accuracy.'],
+        ['hba_ep_card4_num','Card 4 Number','04'],
+        ['hba_ep_card4_title','Card 4 Title','Kept current'],
+        ['hba_ep_card4_text','Card 4 Text','Content is revisited at least annually and updated as guidance changes.'],
+    ];
+    foreach ( $ep_cards as $c ) {
+        $wp_customize->add_setting( $c[0], [ 'default' => $c[2], 'sanitize_callback' => 'sanitize_text_field' ] );
+        $wp_customize->add_control( $c[0], [ 'label' => $c[1], 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+    }
+
+    // --- WHAT WE WON'T PUBLISH CALLOUT ---
+    $wp_customize->add_setting( 'hba_ep_callout_title', [ 'default' => "What we won't publish", 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_callout_title', [ 'label' => 'Callout Box — Title', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    $wp_customize->add_setting( 'hba_ep_callout_text', [ 'default' => "We don't publish unverified claims, anecdotal \"cures,\" exaggerated supplement or product benefits, or advice that contradicts established medical guidance. If a topic is genuinely unsettled in the research, our articles reflect that uncertainty rather than picking a side for the sake of a confident headline.", 'sanitize_callback' => 'sanitize_textarea_field' ] );
+    $wp_customize->add_control( 'hba_ep_callout_text', [ 'label' => 'Callout Box — Text', 'section' => 'hba_editorial_policy', 'type' => 'textarea' ] );
+
+    // --- REVIEWER ---
+    $wp_customize->add_setting( 'hba_ep_reviewer_name', [ 'default' => 'Dr. Sarah Matheson, MBChB, MRCGP', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_reviewer_name', [ 'label' => 'Reviewer — Full Name + Credentials', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    $wp_customize->add_setting( 'hba_ep_reviewer_role', [ 'default' => 'Lead Medical Reviewer · Internal Medicine, Preventive Health & Healthy Aging', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_reviewer_role', [ 'label' => 'Reviewer — Role / Specialty', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    $wp_customize->add_setting( 'hba_ep_reviewer_img', [ 'default' => 'http://healthbeyondage.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-10-at-12.55.05-PM.jpeg', 'sanitize_callback' => 'esc_url_raw' ] );
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'hba_ep_reviewer_img', [ 'label' => 'Reviewer — Photo', 'section' => 'hba_editorial_policy' ] ) );
+
+    // Sidebar reviewer card
+    $wp_customize->add_setting( 'hba_ep_sidebar_reviewer_name', [ 'default' => 'Dr. Sarah Matheson', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_sidebar_reviewer_name', [ 'label' => 'Sidebar Reviewer Card — Name', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    $wp_customize->add_setting( 'hba_ep_sidebar_reviewer_role', [ 'default' => 'Lead Medical Reviewer', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_sidebar_reviewer_role', [ 'label' => 'Sidebar Reviewer Card — Role', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    $wp_customize->add_setting( 'hba_ep_sidebar_reviewer_bio', [ 'default' => 'Board-certified in internal medicine, with 18 years overseeing medical review at Health Beyond Age.', 'sanitize_callback' => 'sanitize_textarea_field' ] );
+    $wp_customize->add_control( 'hba_ep_sidebar_reviewer_bio', [ 'label' => 'Sidebar Reviewer Card — Bio', 'section' => 'hba_editorial_policy', 'type' => 'textarea' ] );
+
+    $wp_customize->add_setting( 'hba_ep_sidebar_reviewer_img', [ 'default' => 'http://healthbeyondage.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-10-at-12.55.05-PM.jpeg', 'sanitize_callback' => 'esc_url_raw' ] );
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'hba_ep_sidebar_reviewer_img', [ 'label' => 'Sidebar Reviewer Card — Photo', 'section' => 'hba_editorial_policy' ] ) );
+
+    // --- CONTACT BOX ---
+    $wp_customize->add_setting( 'hba_ep_contact_title', [ 'default' => 'Questions About Our Editorial Process?', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_contact_title', [ 'label' => 'Contact Box — Title', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    $wp_customize->add_setting( 'hba_ep_contact_text', [ 'default' => "We're glad to explain how a specific article was researched or reviewed, or to hear about a correction you think we should make.", 'sanitize_callback' => 'sanitize_textarea_field' ] );
+    $wp_customize->add_control( 'hba_ep_contact_text', [ 'label' => 'Contact Box — Text', 'section' => 'hba_editorial_policy', 'type' => 'textarea' ] );
+
+    $wp_customize->add_setting( 'hba_ep_contact_btn', [ 'default' => 'Contact Our Editorial Team', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_contact_btn', [ 'label' => 'Contact Box — Button Label', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    // --- NEWSLETTER SIDEBAR ---
+    $wp_customize->add_setting( 'hba_ep_nl_title', [ 'default' => '✦ Stay Ahead of Your Health', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_nl_title', [ 'label' => 'Sidebar Newsletter — Title', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    $wp_customize->add_setting( 'hba_ep_nl_text', [ 'default' => 'Expert-curated wellness insights, delivered every Friday. No noise, no spam.', 'sanitize_callback' => 'sanitize_textarea_field' ] );
+    $wp_customize->add_control( 'hba_ep_nl_text', [ 'label' => 'Sidebar Newsletter — Text', 'section' => 'hba_editorial_policy', 'type' => 'textarea' ] );
+
+    // --- FOOTER STATS ---
+    $wp_customize->add_setting( 'hba_ep_stat1', [ 'default' => '5 Health Categories', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_stat1', [ 'label' => 'Footer Stat 1', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    $wp_customize->add_setting( 'hba_ep_stat2', [ 'default' => '100% Medically Reviewed', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_stat2', [ 'label' => 'Footer Stat 2', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
+    $wp_customize->add_setting( 'hba_ep_stat3', [ 'default' => 'Since 2021 Publishing', 'sanitize_callback' => 'sanitize_text_field' ] );
+    $wp_customize->add_control( 'hba_ep_stat3', [ 'label' => 'Footer Stat 3', 'section' => 'hba_editorial_policy', 'type' => 'text' ] );
+
 }
 add_action( 'customize_register', 'hba_customizer' );
 
