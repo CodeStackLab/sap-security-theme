@@ -41,6 +41,11 @@ get_header();
                 echo '<div class="entry-content">';
                 the_content();
                 echo '</div>';
+
+                // PAGE FOOTER: COMMENTS
+                echo '<div class="page-footer" style="margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--color-border);">';
+                    comments_template();
+                echo '</div>';
                 
             endwhile; 
             ?>

@@ -941,3 +941,6 @@ function sap_quiz_ui_fix() {
     <?php
 }
 add_action('wp_head', 'sap_quiz_ui_fix');
+
+// Force comments to be open on all posts and pages
+add_filter( 'comments_open', '__return_true', 99 );
